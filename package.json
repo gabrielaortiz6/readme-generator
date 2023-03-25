@@ -1,0 +1,24 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "ReadMe Generates that uses inquirer",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielaortiz6/readme-generator.git"
+  },
+  "keywords": [
+    "readme",
+    "generator",
+    "inquirer"
+  ],
+  "author": "Gabriela Ortiz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabrielaortiz6/readme-generator/issues"
+  },
+  "homepage": "https://github.com/gabrielaortiz6/readme-generator#readme"
+}
