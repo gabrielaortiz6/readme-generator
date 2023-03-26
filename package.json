@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/gabrielaortiz6/readme-generator/issues"
   },
-  "homepage": "https://github.com/gabrielaortiz6/readme-generator#readme"
+  "homepage": "https://github.com/gabrielaortiz6/readme-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
 }
