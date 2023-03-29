@@ -53,15 +53,15 @@ const questions = [
 }];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-
-}
+// function writeToFile(fileName, response) {
+  
+// }
 
 // TODO: Create a function to initialize app
 function init() {
-    inquirer.prompt(questions).then((response) => {
-        console.log(answers);
-        generateReadMe(response)
+    inquirer.prompt(questions).then(response => {
+        console.log(response);
+        generateReadMe(response);
      });
 }
 
@@ -71,49 +71,50 @@ init();
 function generateReadMe({ title, description, installation, usage, contributions, tests, license, github, email }) {
     //add the above to some html content
     const readMeString = `
-    # ${answers.title} 
+    # ${title} 
 
-    ![GitHub license](https://img.shields.io/badge/license-${answers.license}-lightgrey.svg)
+    ![GitHub license](https://img.shields.io/badge/license-${license}-lightgrey.svg)
 
     ## Description
     
-    ${answers.description}
+    ${description}
 
     ---
     
     ## Installation
     
-    ${answers.installation}
+    ${installation}
     
     ---
 
     ## Usage
     
-    ${answers.usage}
+    ${usage}
     
     ---
 
     ## Contribution Guidelines
     
-    ${answers.contributions}
+    ${contributions}
 
     ---
 
     # Tests
 
-    ${answers.tests}
+    ${tests}
 
     ---
     
     ## License
     
-    This project is licensed under the ${answers.license} license.
+    This project is licensed under the ${license} license.
 
     # Questions
 
-    If you need to reach me to ask questions, feel free to contact me on my [GitHub](https://github.com/${answers.github}) or send me an email at ${answers.email}.
+    If you need to reach me to ask questions, feel free to contact me on my [GitHub](https://github.com/${github}) or send me an email at ${email}. Put the project name in the subject line.
 
     `;
-//     //write that content to a file with fs
-//     fs.writeFile("README.md", readMeString, (err) => err ? console.error(error) : console.log("Success!"));
+    //write that content to a file with fs
+    fs.writeFile("README.md", readMeString, (err) => err ? console.error(error) : console.log("Success!"));
+    console.log("ReadMe.md has been generated")
 }
