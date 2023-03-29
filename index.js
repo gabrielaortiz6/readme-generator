@@ -38,7 +38,7 @@ const questions = [
 {
     type: 'list',
     message: 'Please select a license ',
-    choices: ['Apache License 2.0', 'GNU General Public License v3.0', 'MIT License', 'BSD 2-Clause "Simplified" License', 'BSD 3-Clause "New" or "Revised" License', 'Boost Software License 1.0', 'Creative Commons Zero v1.0 Universal', 'Eclipse Public License 2.0', 'Mozilla Public License 2.0', 'The Unlicense'],
+    choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3'],
     name: 'license',
 },
  {
@@ -71,7 +71,9 @@ init();
 function generateReadMe({ title, description, installation, usage, contributions, tests, license, github, email }) {
     //add the above to some html content
     const readMeString = `
-    # ${answers.title}
+    # ${answers.title} 
+
+    ![GitHub license](https://img.shields.io/badge/license-${answers.license}-lightgrey.svg)
 
     ## Description
     
