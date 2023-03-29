@@ -53,66 +53,65 @@ const questions = [
 }];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+
+}
 
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then((response) => {
         console.log(answers);
+        generateReadMe(response)
      });
 }
 
 // Function call to initialize app
 init();
 
+function generateReadMe({ title, description, installation, usage, contributions, tests, license, github, email }) {
+    //add the above to some html content
+    const readMeString = `
+    # ${answers.title}
 
-// inquirer.prompt(questions).then(response => {
-//     console.log(response);
-//     //use fs to write the response to a file
-//     generateReadMe(response);
-// });
+    ## Description
+    
+    ${answers.description}
 
-// function generateReadMe({ title, description, installation, usage, contributions, tests, license, github, email }) {
-//     //add the above to some html content
-//     const readMeString = `
-// <!DOCTYPE html>
-// <html lang="en">
-// <head>
-//     <meta charset="UTF-8">
-//     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-//     <title>Profile</title>
-//     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-//         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-//     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-//         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-//         crossorigin="anonymous"></script>
-// </head>
-// <body>
-//     <nav class="navbar bg-body-tertiary">
-//         <div class="container-fluid">
-//             <span class="navbar-brand mb-0 h1">Hello, my name is ${name}</span>
-//         </div>
-//     </nav>
-//     <div class="container mt-5 border rounded p-5">
-//         <div class="row">
-//             <div class="col-md-12">I live in ${location}.</div>
-//         </div>
-//         <hr />
-//         <div class="row">
-//             <div class="col-md-12">My favorite movie is ${movie}.</div>
-//         </div>
-//         <hr />
-//         <div class="row">
-//             <div class="col-md-12">My Github username is ${github}</div>
-//         </div>
-//         <hr />
-//         <div class="row"><a href="${linkedin}" target="_blank"><button type="button" class="btn btn-light">Check out my Linkedin
-//                 Profile!</button></a></div>
-//     </div>
-// </body>
-// </html>
-// `;
+    ---
+    
+    ## Installation
+    
+    ${answers.installation}
+    
+    ---
+
+    ## Usage
+    
+    ${answers.usage}
+    
+    ---
+
+    ## Contribution Guidelines
+    
+    ${answers.contributions}
+
+    ---
+
+    # Tests
+
+    ${answers.tests}
+
+    ---
+    
+    ## License
+    
+    This project is licensed under the ${answers.license} license.
+
+    # Questions
+
+    If you need to reach me to ask questions, feel free to contact me on my [GitHub](https://github.com/${answers.github}) or send me an email at ${answers.email}.
+
+    `;
 //     //write that content to a file with fs
 //     fs.writeFile("README.md", readMeString, (err) => err ? console.error(error) : console.log("Success!"));
-// }
+}
