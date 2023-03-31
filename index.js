@@ -60,13 +60,6 @@ function writeToFile(fileName, data) {
     );
 }
 
-// function saveResponsesToFile(filename, response) {
-//     fs.writeFile(filename, JSON.stringify(response, null, 1), (err) => { 
-//     if (err) throw err;
-//     console.log('Responses saved!');
-// })
-// }
-
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then(response => {
@@ -78,11 +71,6 @@ function init() {
         writeToFile('README.md', readmeContent);
 
     })
-        // .then(() => {
-        //     //const responseData = require('./response.json');
-        //     const readmeContent = generateReadme(responseData);
-        //     writeToFile('README.md', readmeContent);
-        // })
         .catch((err) => {
             console.error(err);
         });
