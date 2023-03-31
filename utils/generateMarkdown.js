@@ -18,13 +18,13 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license === 'MIT') {
-    return `![MIT](https://choosealicense.com/licenses/mit/#`
+    return `[MIT](https://choosealicense.com/licenses/mit/#`
   } else if (license === 'Apache 2.0') {
-    return `![Apache 2.0](https://choosealicense.com/licenses/apache-2.0/`
+    return `[Apache 2.0](https://choosealicense.com/licenses/apache-2.0/`
   } else if (license === 'GPL 3.0') {
-    return `![GPL 3.0](https://choosealicense.com/licenses/gpl-3.0/`
+    return `[GPL 3.0](https://choosealicense.com/licenses/gpl-3.0/`
   } else if (license === 'BSD 3') {
-    return `![BSD 3-Clause](https://choosealicense.com/licenses/bsd-3-clause-clear/#`
+    return `[BSD 3-Clause](https://choosealicense.com/licenses/bsd-3-clause-clear/#`
   } else {
     return ''
   }
@@ -34,9 +34,8 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license === 'MIT') {
-    return `MIT License
-
-    Copyright (c) [year] [fullname]
+    return `
+    Copyright (c) [2023]
     
     Permission is hereby granted, free of charge, to any person obtaining a copy
     of this software and associated documentation files (the "Software"), to deal
@@ -56,9 +55,9 @@ function renderLicenseSection(license) {
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     SOFTWARE.`
   } else if (license === 'Apache 2.0') {
-    return `                                 Apache License
+    return `
     Version 2.0, January 2004
- http://www.apache.org/licenses/
+ 
 
 TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 
@@ -244,7 +243,7 @@ file or class name and description of purpose be included on the
 same "printed page" as the copyright notice for easier
 identification within third-party archives.
 
-Copyright [yyyy] [name of copyright owner]
+Copyright [2023]
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -258,7 +257,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.`
   } else if (license === 'GPL 3.0') {
-    return `                    GNU GENERAL PUBLIC LICENSE
+    return `
     Version 3, 29 June 2007
 
 Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
@@ -933,8 +932,7 @@ the library.  If this is what you want to do, use the GNU Lesser General
 Public License instead of this License.  But first, please read
 <https://www.gnu.org/licenses/why-not-lgpl.html>.`
   } else if (license === 'BSD 3') {
-    return `The Clear BSD License
-
+    return `
     Copyright (c) [year] [fullname]
     All rights reserved.
     
@@ -980,7 +978,7 @@ function generateMarkdown(data) {
   - [Installation](#installation)
   - [Usage](#usage) 
   - [Contribution Guidelines](#contribution-guidelines) 
-  - [License] (#license) 
+  - [License](#license) 
   - [Testing](#testing)
   - [Questions](#questions)
   ## Installation 
