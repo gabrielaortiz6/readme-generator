@@ -18,7 +18,7 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license === 'MIT') {
-    return `[MIT](https://choosealicense.com/licenses/mit/#`
+    return `[MIT](https://choosealicense.com/licenses/)`
   } else if (license === 'Apache 2.0') {
     return `[Apache 2.0](https://choosealicense.com/licenses/apache-2.0/`
   } else if (license === 'GPL 3.0') {
@@ -990,7 +990,7 @@ function generateMarkdown(data) {
   ## Tests 
   ${data.tests} 
   ## License 
-  This project is licensed under the ${renderLicenseLink(data.license)} license. 
+  This project is licensed under the ${data.license} license. 
   ${renderLicenseSection(data.license)}
   ## Questions 
   If you need to reach me to ask questions, feel free to contact me on my [GitHub](https://github.com/${data.github}) or send me an email at ${data.email}. Put the project name in the subject line.`;

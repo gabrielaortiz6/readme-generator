@@ -67,9 +67,7 @@ function init() {
         const data = JSON.stringify(response, null, 1);
         //writeToFile('response.json', data);
         const readmeContent = generateMarkdown(JSON.parse(data));
-        console.log(readmeContent);
         writeToFile('README.md', readmeContent);
-
     })
         .catch((err) => {
             console.error(err);
