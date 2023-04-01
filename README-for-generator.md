@@ -36,9 +36,8 @@ THEN I am taken to the corresponding section of the README
 
 The following video and shows the web application's appearance and functionality:
 
-![The weather app includes a search option, a list of cities, and a five-day forecast and current weather conditions for Providence.](./assets/screenshot-weather-app.png)
+![Video of readme-generator walkthrough.](https://user-images.githubusercontent.com/122922799/229307965-cd73f379-a058-495c-98a7-bfbe747c0213.mp4)
 
-![If you click on one of the cities in the search history, the weather app will display the current weather conditions and the five-day forecast](./assets/screenrecording-weather-app.gif)
 
 
 - - -
