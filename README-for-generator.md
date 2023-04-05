@@ -36,10 +36,6 @@ THEN I am taken to the corresponding section of the README
 
 The following video and shows the web application's appearance and functionality:
 
-![The weather app includes a search option, a list of cities, and a five-day forecast and current weather conditions for Providence.](./assets/screenshot-weather-app.png)
-
-![If you click on one of the cities in the search history, the weather app will display the current weather conditions and the five-day forecast](./assets/screenrecording-weather-app.gif)
-
-
+![Video of functionality](https://drive.google.com/drive/u/0/my-drive)
 - - -
 © 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
