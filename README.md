@@ -41,3 +41,6 @@
     SOFTWARE.
   ## Questions 
   If you need to reach me to ask questions, feel free to contact me on my [GitHub](https://github.com/gabrielaortiz6) or send me an email at gaby@gmail.com. Put the project name in the subject line.
+  ## Links
+  
+  [Google Drive video link](https://drive.google.com/file/d/19KKn2FavXKQcYc7qi79AzqLaE8jD3JHv/view)
