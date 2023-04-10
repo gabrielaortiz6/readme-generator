@@ -979,7 +979,7 @@ function generateMarkdown(data) {
   - [Usage](#usage) 
   - [Contribution Guidelines](#contribution-guidelines) 
   - [License](#license) 
-  - [Testing](#testing)
+  - [Testing](#tests)
   - [Questions](#questions)
   ## Installation 
   ${data.installation} 

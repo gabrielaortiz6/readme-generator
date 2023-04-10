@@ -7,7 +7,7 @@
   - [Usage](#usage) 
   - [Contribution Guidelines](#contribution-guidelines) 
   - [License](#license) 
-  - [Testing](#testing)
+  - [Testing](#tests)
   - [Questions](#questions)
   ## Installation 
   Git clone from Github and initiate with node index 
